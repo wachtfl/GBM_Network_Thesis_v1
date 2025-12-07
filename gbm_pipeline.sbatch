@@ -13,5 +13,5 @@ echo "SLURM_JOBID"=$SLURM_JOBID
 echo "SLURM_JOB_NODELIST"=$SLURM_JOB_NODELIST
 ### Start your code below ####
 module load anaconda ### load anaconda module
-source activate my_env ### activate a conda environment, replace my_env with your conda environment
+source activate gnn-env ### activate a conda environment, replace my_env with your conda environment
 python run_main_pipeline.py --data_dir --model 'rf' --cv  'lopo' ### model: rf/dtree/logistic/svm cv: lopo/kfold (3-fold default) -n_splits
