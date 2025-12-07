@@ -6,7 +6,7 @@ import glob
 from tqdm import tqdm
 
 class H5GraphDataLoader:
-    def __init__(self, data_dir, graph_pattern="*_v3.h5", metadata_file="metadata2.json"):
+    def __init__(self, data_dir, graph_pattern="*_v3.h5", metadata_file="metadata3.json"):
         self.data_dir = data_dir
         self.graph_pattern = os.path.join(data_dir, graph_pattern)
         self.metadata_path = os.path.join(data_dir, metadata_file)
